@@ -1,0 +1,376 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.sp-menu {
+    display: none;
+}
+
+.container_mobile {
+    display: none;
+}
+
+.section_mobile {
+    display: none;
+}
+
+.header_inner {
+    max-width: 1500px;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-logo {
+   display: block;
+    height: 20px;
+    width: auto;
+}
+
+.listmain {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.firstview {
+    background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+
+
+.gnav_list {
+    display: flex;
+}
+
+.gnav_list li {
+    margin-left: 50px;
+    list-style:none;
+    font-family: 'Lato',sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+    font-size: 10px;
+    color: black;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.gnav_list a:hover {
+    opacity: 0.7
+}
+
+
+.button {
+ background-color: #f79214;
+ border: none;
+ color: white;
+ font-weight: bold;
+ font-size: 5px;
+ padding: 10px 30px;
+ border-radius: 38px;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    box-sizing: border-box;
+}
+
+.school {
+    margin-bottom: 70px;
+    width: fit-content;
+}
+
+.title {
+    color: #333;
+    font-family: "Lato",sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.images {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.image {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.button2 {
+    background-color: #f79214;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 25px 125px;
+    border-radius: 38px;
+    text-align: center;
+}
+
+.button_dx a:hover { 
+opacity: 0.7
+}
+
+.caption {
+    color: #a2a2a4;
+    font-size: 12px;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    background-color: #f79214;
+}
+
+
+.video {
+    width: 70%;
+    padding: 4% 20% 0 25%;
+    
+}
+
+.reskilling {
+    color: white;
+}
+
+.reskilling_h2 {
+    font-family: 'Lato',sans-serif;
+    font-size: 38px;
+}
+
+p {
+    padding-right: 25%;
+}
+
+.reskillingimage {
+    width: 20%;
+}
+
+
+@media screen and (max-width: 1080px) {
+
+.header {
+    background-color: white;
+    z-index: 1000;
+    width: 200%;
+    position: fixed;
+    flex:relative;
+    top:-1px;
+}    
+    
+.gnav_list li {
+display: none;
+
+}
+
+
+.title-logo {
+    position: fixed;
+    z-index: 1000;
+}
+
+.sp-menu {
+    display: block;
+    background-color: white;
+}
+
+.sp-menu__box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  height: 42px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background: white;
+}
+.sp-menu__box span,
+.sp-menu__box span:before,
+.sp-menu__box span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: black;
+  position: absolute;
+}
+.sp-menu__box span:before {
+  bottom: 8px;
+}
+.sp-menu__box span:after {
+  top: 8px;
+}
+#sp-menu__check {
+  display: none;
+}
+#sp-menu__check:checked ~ .sp-menu__box span {
+  background: rgba(255, 255, 255, 0);
+}
+#sp-menu__check:checked ~ .sp-menu__box span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#sp-menu__check:checked ~ .sp-menu__box span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+#sp-menu__check:checked ~ .sp-menu__content {
+  left: 0;
+}
+.sp-menu__content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 42px;
+  left: 100%;
+  z-index: 80;
+  background-color:rgba(0,0,0,.8);
+  transition: all 0.5s;
+}
+
+.gnav_list_sp {
+    text-align: center;
+}
+
+.gnav_list_sp li {
+   margin-bottom: 60px;
+}
+
+.gnav_list_sp li span {
+    color: orange;
+}
+
+.gnav_list_sp li span .listmain_sp {
+color: white;
+font-size: 20px;
+font-weight: bold;
+}
+
+.firstview {
+    background-image: none;
+}
+
+.firstview_tablet {
+    background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.title {
+    padding-top: 70px
+
+}
+
+@media screen and (max-width: 767px){
+    
+
+
+    
+.resizeimage img { width: 100vw; }
+    
+.firstview {
+    background-image: none;
+}
+ 
+.firstview_mobile{
+    background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp");
+    background-size:100%;
+    background-repeat: no-repeat;
+    padding-top:55%;
+    padding-bottom: 15%;
+  }
+  
+.container {
+    display: none;
+}
+
+.container_mobile {
+    display: block;
+}
+
+.title_mobile {
+    text-align: center;
+}
+
+.images_mobile {
+	display: flex;
+	justify-content: space-between;
+    gap: 0.1px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.images_mobile img {
+    width: 27.5%;
+    
+}
+
+
+.title_mobile {
+    margin-top: 10%;
+}
+
+.button_mobile {
+ background-color: #f79214;
+ border: none;
+ color: white;
+ font-size: 13px;
+ font-weight: bold;
+ padding: 5% 20%;
+ border-radius: 38px;
+}
+
+
+.section {
+  display: none;
+}
+
+.section_mobile{
+ display: block; 
+ text-align: center;
+}
+
+.video_mobile {
+    width: 70%;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.reskilling_p {
+    display: block;
+    text-align: center;
+    
+}
+
+
+.reskillingimage_mobile {
+    width: 50%;
+}
+
+
+}
